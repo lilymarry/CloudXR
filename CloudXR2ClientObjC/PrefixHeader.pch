@@ -1,0 +1,65 @@
+//
+//  PrefixHeader.pch
+//  CloudXRSDK
+//
+//  Created by 万间科技 on 2021/7/13.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIImageView+WebCache.h"
+#import "MBProgressHUD+YF.h"
+#import "Masonry.h"
+#import "OAAPIClient.h"
+#import "HelpCommon.h"
+#define RBGColor(r, g, b,al) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(al)]
+#define Color(hex)  [UIColor colorWithHexString:hex]
+#define ScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define ScreenHeight ([UIScreen mainScreen].bounds.size.height)
+#define font(cgfloat) [UIFont systemFontOfSize:cgfloat]
+#define fontWithName(name,cgfloat) [UIFont fontWithName:name size:cgfloat];
+
+#define Is_iPhoneX \
+({BOOL Is_iPhoneX = NO;\
+if (@available(iOS 11.0, *)) {\
+Is_iPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+}\
+(Is_iPhoneX);})
+
+#define NaviBarAndStatusBarHeight (CGFloat)(Is_iPhoneX?(88.0):(64.0))
+#define TabBarHeight (CGFloat)(Is_iPhoneX?(49.0 + 34.0):(49.0))
+#define BaseSCREEN_WIDTH               375.0f
+#define AUTOLAYOUT_WIDTH_SCALE         ScreenWidth / BaseSCREEN_WIDTH
+#define AUTOLAYOUT_LENGTH(x)           ((x) * AUTOLAYOUT_WIDTH_SCALE)
+
+#define NOTNULL(x) ((![x isKindOfClass:[NSNull class]])&&x)
+#define SWNOTEmptyArr(X) (NOTNULL(X)&&[X isKindOfClass:[NSArray class]]&&[X count])
+#define SWNOTEmptyDictionary(X) (NOTNULL(X)&&[X isKindOfClass:[NSDictionary class]]&&[[X allKeys]count])
+#define SWNOTEmptyStr(X) (NOTNULL(X)&&[X isKindOfClass:[NSString class]]&&((NSString *)X).length)
+
+#define  adjustsScrollViewInsets_NO(scrollView,vc)\
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+if ([UIScrollView instancesRespondToSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:")]) {\
+[scrollView   performSelector:NSSelectorFromString(@"setContentInsetAdjustmentBehavior:") withObject:@(2)];\
+} else {\
+vc.automaticallyAdjustsScrollViewInsets = NO;\
+}\
+_Pragma("clang diagnostic pop") \
+} while (0)
+
+// 状态栏高度
+#define STATUS_BAR_HEIGHT (Is_iPhoneX ? 44.f : 20.f)
+
+
+#define isIOS11 [[UIDevice currentDevice].systemVersion floatValue] >= 11
+
+#define isIOS10 [[UIDevice currentDevice].systemVersion floatValue]>=10&&[[UIDevice currentDevice].systemVersion floatValue]<11
+
+
+#define Base_url @"http://cloud.ourbim.com:11011"
+
+#define websocket_url @"ws://192.168.3.160:14200/echo"
+#endif /* PrefixHeader_pch */

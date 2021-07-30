@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		664789BF26AE464A0047FDCE /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 664789BE26AE464A0047FDCE /* grid.png */; };
+		6657231726AE8B25009B4667 /* HelpCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 6657231526AE8B25009B4667 /* HelpCommon.m */; };
+		6679307326A00DB7009AAA88 /* libCloudXR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6679307226A00DB7009AAA88 /* libCloudXR.a */; };
+		6679307926A0122E009AAA88 /* MainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6679307726A0122E009AAA88 /* MainViewCell.m */; };
+		6679307A26A0122E009AAA88 /* MainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6679307826A0122E009AAA88 /* MainViewCell.xib */; };
+		6679308126A01579009AAA88 /* OperationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6679307B26A01579009AAA88 /* OperationView.xib */; };
+		6679308226A01579009AAA88 /* OAAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6679307C26A01579009AAA88 /* OAAPIClient.m */; };
+		6679308326A01579009AAA88 /* OperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6679307E26A01579009AAA88 /* OperationView.m */; };
+		6684446626AFA464006141CA /* RPPreviewViewController+MovieURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6684446526AFA464006141CA /* RPPreviewViewController+MovieURL.m */; };
+		6684446726AFA4A7006141CA /* StreamSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35A489025F82F5D009C17D1 /* StreamSdk.framework */; };
+		6684446826AFA4A7006141CA /* StreamSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A35A489025F82F5D009C17D1 /* StreamSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66896BCE26A180FA00B665E0 /* ScanTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66896BCD26A180FA00B665E0 /* ScanTipView.m */; };
+		66896BD026A1810D00B665E0 /* ScanTipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66896BCF26A1810D00B665E0 /* ScanTipView.xib */; };
+		668E437C26A548E30007666A /* ScanerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 668E437B26A548E30007666A /* ScanerView.m */; };
+		668E437F26A548F60007666A /* ff_QRCodeScanLine_sub@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 668E437D26A548F60007666A /* ff_QRCodeScanLine_sub@2x.png */; };
+		668E438026A548F60007666A /* ff_QRCodeScanLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 668E437E26A548F60007666A /* ff_QRCodeScanLine@2x.png */; };
+		668E438226A548FF0007666A /* scan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 668E438126A548FF0007666A /* scan.wav */; };
+		668E438526A549720007666A /* ScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 668E438426A549720007666A /* ScanCodeViewController.m */; };
+		66923C6D26A663CC00678C05 /* ComponentListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 66923C6B26A663CC00678C05 /* ComponentListCell.m */; };
+		66923C6E26A663CC00678C05 /* ComponentListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66923C6C26A663CC00678C05 /* ComponentListCell.xib */; };
+		66923C7126A673EF00678C05 /* OABaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66923C7026A673EF00678C05 /* OABaseModel.m */; };
+		66923C7426A6742600678C05 /* ComponentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66923C7326A6742600678C05 /* ComponentModel.m */; };
+		66B5DAF026A01F6800C7EE26 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66B5DAEF26A01F6800C7EE26 /* Login.storyboard */; };
+		66D20ADE26B24BF400A06939 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D20ADD26B24BF400A06939 /* LoginViewController.m */; };
+		66D20AE126B2905900A06939 /* ZQTColorSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D20AE026B2905900A06939 /* ZQTColorSwitch.m */; };
+		A30B785725D09EA300ACF511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B785625D09EA300ACF511 /* AppDelegate.m */; };
+		A30B785A25D09EA300ACF511 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B785925D09EA300ACF511 /* SceneDelegate.m */; };
+		A30B785D25D09EA300ACF511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B785C25D09EA300ACF511 /* ViewController.m */; };
+		A30B786025D09EA300ACF511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30B785E25D09EA300ACF511 /* Main.storyboard */; };
+		A30B786225D09EA600ACF511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30B786125D09EA600ACF511 /* Assets.xcassets */; };
+		A30B786525D09EA600ACF511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30B786325D09EA600ACF511 /* LaunchScreen.storyboard */; };
+		A30B786825D09EA600ACF511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B786725D09EA600ACF511 /* main.m */; };
+		A30B787125D09F5F00ACF511 /* CXRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A30B787025D09F5F00ACF511 /* CXRViewController.m */; };
+		A30B787625D165AA00ACF511 /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A30B787525D165AA00ACF511 /* shaders.metal */; };
+		A3669A1F25D2F9B800EE609B /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3669A1E25D2F9B800EE609B /* VideoToolbox.framework */; };
+		A3669A2225D2F9D100EE609B /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A3669A2125D2F9D100EE609B /* libc++.tbd */; };
+		C1A3D9A31A7C706FBDD55476 /* libPods-CloudXR2ClientObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FF7CF5B637B57CC4E6843C /* libPods-CloudXR2ClientObjC.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6684446926AFA4A7006141CA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6684446826AFA4A7006141CA /* StreamSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		008CBC1FE97A160AF5F98B24 /* Pods-CloudXR2ClientObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudXR2ClientObjC.debug.xcconfig"; path = "Target Support Files/Pods-CloudXR2ClientObjC/Pods-CloudXR2ClientObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		664789BE26AE464A0047FDCE /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		6657231526AE8B25009B4667 /* HelpCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpCommon.m; sourceTree = "<group>"; };
+		6657231626AE8B25009B4667 /* HelpCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpCommon.h; sourceTree = "<group>"; };
+		6679306F26A00D8B009AAA88 /* CloudXRCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudXRCommon.h; sourceTree = "<group>"; };
+		6679307026A00D8B009AAA88 /* CloudXRClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudXRClient.h; sourceTree = "<group>"; };
+		6679307126A00D8B009AAA88 /* CloudXRInputEvents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CloudXRInputEvents.h; sourceTree = "<group>"; };
+		6679307226A00DB7009AAA88 /* libCloudXR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCloudXR.a; sourceTree = "<group>"; };
+		6679307626A0122E009AAA88 /* MainViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewCell.h; sourceTree = "<group>"; };
+		6679307726A0122E009AAA88 /* MainViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewCell.m; sourceTree = "<group>"; };
+		6679307826A0122E009AAA88 /* MainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
+		6679307B26A01579009AAA88 /* OperationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OperationView.xib; sourceTree = "<group>"; };
+		6679307C26A01579009AAA88 /* OAAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAPIClient.m; sourceTree = "<group>"; };
+		6679307D26A01579009AAA88 /* OperationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationView.h; sourceTree = "<group>"; };
+		6679307E26A01579009AAA88 /* OperationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationView.m; sourceTree = "<group>"; };
+		6679307F26A01579009AAA88 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6679308026A01579009AAA88 /* OAAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAPIClient.h; sourceTree = "<group>"; };
+		6684446426AFA464006141CA /* RPPreviewViewController+MovieURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RPPreviewViewController+MovieURL.h"; sourceTree = "<group>"; };
+		6684446526AFA464006141CA /* RPPreviewViewController+MovieURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RPPreviewViewController+MovieURL.m"; sourceTree = "<group>"; };
+		66896BCC26A180FA00B665E0 /* ScanTipView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanTipView.h; sourceTree = "<group>"; };
+		66896BCD26A180FA00B665E0 /* ScanTipView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanTipView.m; sourceTree = "<group>"; };
+		66896BCF26A1810D00B665E0 /* ScanTipView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanTipView.xib; sourceTree = "<group>"; };
+		668E437A26A548E30007666A /* ScanerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanerView.h; sourceTree = "<group>"; };
+		668E437B26A548E30007666A /* ScanerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanerView.m; sourceTree = "<group>"; };
+		668E437D26A548F60007666A /* ff_QRCodeScanLine_sub@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_QRCodeScanLine_sub@2x.png"; sourceTree = "<group>"; };
+		668E437E26A548F60007666A /* ff_QRCodeScanLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff_QRCodeScanLine@2x.png"; sourceTree = "<group>"; };
+		668E438126A548FF0007666A /* scan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scan.wav; sourceTree = "<group>"; };
+		668E438326A549720007666A /* ScanCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCodeViewController.h; sourceTree = "<group>"; };
+		668E438426A549720007666A /* ScanCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCodeViewController.m; sourceTree = "<group>"; };
+		66923C6A26A663CC00678C05 /* ComponentListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentListCell.h; sourceTree = "<group>"; };
+		66923C6B26A663CC00678C05 /* ComponentListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentListCell.m; sourceTree = "<group>"; };
+		66923C6C26A663CC00678C05 /* ComponentListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComponentListCell.xib; sourceTree = "<group>"; };
+		66923C6F26A673EE00678C05 /* OABaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OABaseModel.h; sourceTree = "<group>"; };
+		66923C7026A673EF00678C05 /* OABaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OABaseModel.m; sourceTree = "<group>"; };
+		66923C7226A6742600678C05 /* ComponentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentModel.h; sourceTree = "<group>"; };
+		66923C7326A6742600678C05 /* ComponentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentModel.m; sourceTree = "<group>"; };
+		66B5DAEF26A01F6800C7EE26 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		66D20ADC26B24BF400A06939 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		66D20ADD26B24BF400A06939 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		66D20ADF26B2905900A06939 /* ZQTColorSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQTColorSwitch.h; sourceTree = "<group>"; };
+		66D20AE026B2905900A06939 /* ZQTColorSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQTColorSwitch.m; sourceTree = "<group>"; };
+		82FF7CF5B637B57CC4E6843C /* libPods-CloudXR2ClientObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudXR2ClientObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		964E00ED6E7F703FCD7924E8 /* Pods-CloudXR2ClientObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudXR2ClientObjC.release.xcconfig"; path = "Target Support Files/Pods-CloudXR2ClientObjC/Pods-CloudXR2ClientObjC.release.xcconfig"; sourceTree = "<group>"; };
+		A30B785225D09EA300ACF511 /* CloudXR2ClientObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudXR2ClientObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30B785525D09EA300ACF511 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A30B785625D09EA300ACF511 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A30B785825D09EA300ACF511 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		A30B785925D09EA300ACF511 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		A30B785B25D09EA300ACF511 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A30B785C25D09EA300ACF511 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A30B785F25D09EA300ACF511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A30B786125D09EA600ACF511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A30B786425D09EA600ACF511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A30B786625D09EA600ACF511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A30B786725D09EA600ACF511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A30B786F25D09F5F00ACF511 /* CXRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXRViewController.h; sourceTree = "<group>"; };
+		A30B787025D09F5F00ACF511 /* CXRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXRViewController.m; sourceTree = "<group>"; };
+		A30B787525D165AA00ACF511 /* shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		A35A489025F82F5D009C17D1 /* StreamSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StreamSdk.framework; sourceTree = "<group>"; };
+		A3669A1E25D2F9B800EE609B /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		A3669A2125D2F9D100EE609B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30B784F25D09EA300ACF511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3669A2225D2F9D100EE609B /* libc++.tbd in Frameworks */,
+				A3669A1F25D2F9B800EE609B /* VideoToolbox.framework in Frameworks */,
+				6684446726AFA4A7006141CA /* StreamSdk.framework in Frameworks */,
+				6679307326A00DB7009AAA88 /* libCloudXR.a in Frameworks */,
+				C1A3D9A31A7C706FBDD55476 /* libPods-CloudXR2ClientObjC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AD725E80C6D4F3FCF3FCC06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				008CBC1FE97A160AF5F98B24 /* Pods-CloudXR2ClientObjC.debug.xcconfig */,
+				964E00ED6E7F703FCD7924E8 /* Pods-CloudXR2ClientObjC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		66A102DD26B1574000A88528 /* scan */ = {
+			isa = PBXGroup;
+			children = (
+				668E438326A549720007666A /* ScanCodeViewController.h */,
+				668E438426A549720007666A /* ScanCodeViewController.m */,
+				668E437A26A548E30007666A /* ScanerView.h */,
+				668E437B26A548E30007666A /* ScanerView.m */,
+				668E438126A548FF0007666A /* scan.wav */,
+				668E437D26A548F60007666A /* ff_QRCodeScanLine_sub@2x.png */,
+				668E437E26A548F60007666A /* ff_QRCodeScanLine@2x.png */,
+			);
+			path = scan;
+			sourceTree = "<group>";
+		};
+		66A102DE26B1576D00A88528 /* help */ = {
+			isa = PBXGroup;
+			children = (
+				66923C6F26A673EE00678C05 /* OABaseModel.h */,
+				66923C7026A673EF00678C05 /* OABaseModel.m */,
+				6679308026A01579009AAA88 /* OAAPIClient.h */,
+				6679307C26A01579009AAA88 /* OAAPIClient.m */,
+				6657231626AE8B25009B4667 /* HelpCommon.h */,
+				6657231526AE8B25009B4667 /* HelpCommon.m */,
+			);
+			path = help;
+			sourceTree = "<group>";
+		};
+		66A102DF26B157AE00A88528 /* ARKit-CXR */ = {
+			isa = PBXGroup;
+			children = (
+				A30B786F25D09F5F00ACF511 /* CXRViewController.h */,
+				A30B787025D09F5F00ACF511 /* CXRViewController.m */,
+				6684446426AFA464006141CA /* RPPreviewViewController+MovieURL.h */,
+				6684446526AFA464006141CA /* RPPreviewViewController+MovieURL.m */,
+				66923C7226A6742600678C05 /* ComponentModel.h */,
+				66923C7326A6742600678C05 /* ComponentModel.m */,
+				66923C6A26A663CC00678C05 /* ComponentListCell.h */,
+				66923C6B26A663CC00678C05 /* ComponentListCell.m */,
+				66923C6C26A663CC00678C05 /* ComponentListCell.xib */,
+				6679307026A00D8B009AAA88 /* CloudXRClient.h */,
+				6679306F26A00D8B009AAA88 /* CloudXRCommon.h */,
+				6679307126A00D8B009AAA88 /* CloudXRInputEvents.h */,
+				6679307D26A01579009AAA88 /* OperationView.h */,
+				6679307E26A01579009AAA88 /* OperationView.m */,
+				6679307B26A01579009AAA88 /* OperationView.xib */,
+				A30B787525D165AA00ACF511 /* shaders.metal */,
+				664789BE26AE464A0047FDCE /* grid.png */,
+			);
+			path = "ARKit-CXR";
+			sourceTree = "<group>";
+		};
+		66A102E026B1587B00A88528 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				A30B785B25D09EA300ACF511 /* ViewController.h */,
+				A30B785C25D09EA300ACF511 /* ViewController.m */,
+				6679307626A0122E009AAA88 /* MainViewCell.h */,
+				6679307726A0122E009AAA88 /* MainViewCell.m */,
+				6679307826A0122E009AAA88 /* MainViewCell.xib */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		66D20ADB26B24BC200A06939 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				66B5DAEF26A01F6800C7EE26 /* Login.storyboard */,
+				66D20ADF26B2905900A06939 /* ZQTColorSwitch.h */,
+				66D20AE026B2905900A06939 /* ZQTColorSwitch.m */,
+				66D20ADC26B24BF400A06939 /* LoginViewController.h */,
+				66D20ADD26B24BF400A06939 /* LoginViewController.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		A30B784925D09EA300ACF511 = {
+			isa = PBXGroup;
+			children = (
+				A30B785425D09EA300ACF511 /* CloudXR2ClientObjC */,
+				A30B785325D09EA300ACF511 /* Products */,
+				A3669A1825D2F97C00EE609B /* Frameworks */,
+				2AD725E80C6D4F3FCF3FCC06 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A30B785325D09EA300ACF511 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A30B785225D09EA300ACF511 /* CloudXR2ClientObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A30B785425D09EA300ACF511 /* CloudXR2ClientObjC */ = {
+			isa = PBXGroup;
+			children = (
+				A30B785525D09EA300ACF511 /* AppDelegate.h */,
+				A30B785625D09EA300ACF511 /* AppDelegate.m */,
+				A30B785825D09EA300ACF511 /* SceneDelegate.h */,
+				A30B785925D09EA300ACF511 /* SceneDelegate.m */,
+				66D20ADB26B24BC200A06939 /* login */,
+				66A102E026B1587B00A88528 /* MainView */,
+				66A102DF26B157AE00A88528 /* ARKit-CXR */,
+				66A102DE26B1576D00A88528 /* help */,
+				66A102DD26B1574000A88528 /* scan */,
+				66896BCC26A180FA00B665E0 /* ScanTipView.h */,
+				66896BCD26A180FA00B665E0 /* ScanTipView.m */,
+				66896BCF26A1810D00B665E0 /* ScanTipView.xib */,
+				6679307F26A01579009AAA88 /* PrefixHeader.pch */,
+				A30B785E25D09EA300ACF511 /* Main.storyboard */,
+				A30B786125D09EA600ACF511 /* Assets.xcassets */,
+				A30B786325D09EA600ACF511 /* LaunchScreen.storyboard */,
+				A30B786625D09EA600ACF511 /* Info.plist */,
+				A30B786725D09EA600ACF511 /* main.m */,
+			);
+			path = CloudXR2ClientObjC;
+			sourceTree = "<group>";
+		};
+		A3669A1825D2F97C00EE609B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A35A489025F82F5D009C17D1 /* StreamSdk.framework */,
+				A3669A2125D2F9D100EE609B /* libc++.tbd */,
+				A3669A1E25D2F9B800EE609B /* VideoToolbox.framework */,
+				6679307226A00DB7009AAA88 /* libCloudXR.a */,
+				82FF7CF5B637B57CC4E6843C /* libPods-CloudXR2ClientObjC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A30B785125D09EA300ACF511 /* CloudXR2ClientObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A30B786B25D09EA600ACF511 /* Build configuration list for PBXNativeTarget "CloudXR2ClientObjC" */;
+			buildPhases = (
+				9523EEF3D9BD067592B2FBC5 /* [CP] Check Pods Manifest.lock */,
+				A30B784E25D09EA300ACF511 /* Sources */,
+				A30B784F25D09EA300ACF511 /* Frameworks */,
+				A30B785025D09EA300ACF511 /* Resources */,
+				6684446926AFA4A7006141CA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudXR2ClientObjC;
+			productName = CloudXR2ClientObjC;
+			productReference = A30B785225D09EA300ACF511 /* CloudXR2ClientObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A30B784A25D09EA300ACF511 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					A30B785125D09EA300ACF511 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = A30B784D25D09EA300ACF511 /* Build configuration list for PBXProject "CloudXR2ClientObjC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A30B784925D09EA300ACF511;
+			productRefGroup = A30B785325D09EA300ACF511 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A30B785125D09EA300ACF511 /* CloudXR2ClientObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30B785025D09EA300ACF511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6679308126A01579009AAA88 /* OperationView.xib in Resources */,
+				66923C6E26A663CC00678C05 /* ComponentListCell.xib in Resources */,
+				66B5DAF026A01F6800C7EE26 /* Login.storyboard in Resources */,
+				A30B786525D09EA600ACF511 /* LaunchScreen.storyboard in Resources */,
+				66896BD026A1810D00B665E0 /* ScanTipView.xib in Resources */,
+				664789BF26AE464A0047FDCE /* grid.png in Resources */,
+				668E438226A548FF0007666A /* scan.wav in Resources */,
+				A30B786225D09EA600ACF511 /* Assets.xcassets in Resources */,
+				668E437F26A548F60007666A /* ff_QRCodeScanLine_sub@2x.png in Resources */,
+				668E438026A548F60007666A /* ff_QRCodeScanLine@2x.png in Resources */,
+				A30B786025D09EA300ACF511 /* Main.storyboard in Resources */,
+				6679307A26A0122E009AAA88 /* MainViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9523EEF3D9BD067592B2FBC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CloudXR2ClientObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30B784E25D09EA300ACF511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6657231726AE8B25009B4667 /* HelpCommon.m in Sources */,
+				A30B785D25D09EA300ACF511 /* ViewController.m in Sources */,
+				66896BCE26A180FA00B665E0 /* ScanTipView.m in Sources */,
+				6679308226A01579009AAA88 /* OAAPIClient.m in Sources */,
+				66D20AE126B2905900A06939 /* ZQTColorSwitch.m in Sources */,
+				A30B785725D09EA300ACF511 /* AppDelegate.m in Sources */,
+				668E437C26A548E30007666A /* ScanerView.m in Sources */,
+				66923C6D26A663CC00678C05 /* ComponentListCell.m in Sources */,
+				668E438526A549720007666A /* ScanCodeViewController.m in Sources */,
+				A30B787625D165AA00ACF511 /* shaders.metal in Sources */,
+				A30B787125D09F5F00ACF511 /* CXRViewController.m in Sources */,
+				6679308326A01579009AAA88 /* OperationView.m in Sources */,
+				6679307926A0122E009AAA88 /* MainViewCell.m in Sources */,
+				6684446626AFA464006141CA /* RPPreviewViewController+MovieURL.m in Sources */,
+				66923C7126A673EF00678C05 /* OABaseModel.m in Sources */,
+				66D20ADE26B24BF400A06939 /* LoginViewController.m in Sources */,
+				A30B786825D09EA600ACF511 /* main.m in Sources */,
+				A30B785A25D09EA300ACF511 /* SceneDelegate.m in Sources */,
+				66923C7426A6742600678C05 /* ComponentModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A30B785E25D09EA300ACF511 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30B785F25D09EA300ACF511 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A30B786325D09EA600ACF511 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A30B786425D09EA600ACF511 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A30B786925D09EA600ACF511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					../lib,
+					../../../Client/Lib/iOS,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../../Client/Include,
+					../../common/sdk,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LIBRARY_SEARCH_PATHS = (
+					../lib,
+					../../../Client/Lib/iOS,
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					StreamSDK,
+					"-lCloudXR",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A30B786A25D09EA600ACF511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					../lib,
+					../../../Client/Lib/iOS,
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../include,
+					../../../Client/Include,
+					../../common/sdk,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LIBRARY_SEARCH_PATHS = (
+					../lib,
+					../../../Client/Lib/iOS,
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					StreamSDK,
+					"-lCloudXR",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A30B786C25D09EA600ACF511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 008CBC1FE97A160AF5F98B24 /* Pods-CloudXR2ClientObjC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8879CJ9M3W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CloudXR2ClientObjC/PrefixHeader.pch";
+				INFOPLIST_FILE = CloudXR2ClientObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvidia.objc.CloudXR2Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A30B786D25D09EA600ACF511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964E00ED6E7F703FCD7924E8 /* Pods-CloudXR2ClientObjC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8879CJ9M3W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CloudXR2ClientObjC/PrefixHeader.pch";
+				INFOPLIST_FILE = CloudXR2ClientObjC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvidia.objc.CloudXR2Client;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A30B784D25D09EA300ACF511 /* Build configuration list for PBXProject "CloudXR2ClientObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30B786925D09EA600ACF511 /* Debug */,
+				A30B786A25D09EA600ACF511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A30B786B25D09EA600ACF511 /* Build configuration list for PBXNativeTarget "CloudXR2ClientObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A30B786C25D09EA600ACF511 /* Debug */,
+				A30B786D25D09EA600ACF511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A30B784A25D09EA300ACF511 /* Project object */;
+}
